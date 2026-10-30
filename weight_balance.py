@@ -51,5 +51,4 @@ if __name__ == "__main__":
      print(f"CG: {cg:.2f} in")
 
 problems = check_limits(weight, cg)
-print("WITHIN LIMITS" if not problems else "OUT OF LIMITS: " + "\
-; ".join(problems))
+print("WITHIN LIMITS" if not problems else "OUT OF LIMITS: " + "; ".join(problems))
