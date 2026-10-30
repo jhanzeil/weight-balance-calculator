@@ -27,7 +27,6 @@ def moment(weight, arm):
 
 def total_weight_and_cg(loads):
     """Return (total_weight, cg) for a list of (name, weight, arm) items."""
-    # TODO 1: add up all weights, add up all moments, then CG = moments / weight
     total_weight = 0
     total_moment = 0
     for name, weight, arm in loads:
@@ -46,8 +45,6 @@ s within limits."""
          problems.append("CG too far forward")
      if cg > CG_AFT_LIMIT:
          problems.append("CG too far aft")
-     # TODO 2: append a message if total_weight > MAX_WEIGHT
-     # TODO 3: append a message if cg is forward of CG_FORWARD_LIMIT or aft of CG_AFT_LIMIT
      return problems
 
 if __name__ == "__main__":
@@ -55,7 +52,6 @@ if __name__ == "__main__":
      print(f"Total weight: {weight:,.0f} lb")
      print(f"CG: {cg:.2f} in")
 
-# Self-check: with the numbers above, you should get 196,000 lb and a CG of about 1009.18 in, which is within limits.
 problems = check_limits(weight, cg)
 print("WITHIN LIMITS" if not problems else "OUT OF LIMITS: " + "\
 ; ".join(problems))
