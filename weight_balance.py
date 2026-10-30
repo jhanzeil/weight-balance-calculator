@@ -1,8 +1,7 @@
 """
 Weight & Balance Calculator -- starter file
 Core idea (statics): every item has a weight and an "arm" (its distance from a reference datum).
-Moment = weight x arm. The aircraft's cen\
-ter of gravity (CG) is the point where all those moments balance:
+Moment = weight x arm. The aircraft's center of gravity (CG) is the point where all those moments balance:
      CG = total moment / total weight
 All numbers below are FICTIONAL. This is a learning project,
 not real aircraft data, and must never be used for actual operations
@@ -36,8 +35,7 @@ def total_weight_and_cg(loads):
     return total_weight, cg
 
 def check_limits(total_weight, cg):
-     """Return a list of problem strings. An empty list mean\
-s within limits."""
+     """Return a list of problem strings. An empty list means within limits."""
      problems = []
      if total_weight > MAX_WEIGHT:
          problems.append("Over max weight")
