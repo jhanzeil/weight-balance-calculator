@@ -1,5 +1,5 @@
 """
-Weight & Balance Calculator -- starter file
+Weight & Balance Calculator
 Core idea (statics): every item has a weight and an "arm" (its distance from a reference datum).
 Moment = weight x arm. The aircraft's center of gravity (CG) is the point where all those moments balance:
      CG = total moment / total weight
